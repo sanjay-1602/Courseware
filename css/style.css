@@ -1,0 +1,86 @@
+.navbar-brand{
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding-left: 5px;
+}
+
+.custom-nav-item a{
+    color: whitesmoke;
+}
+
+.custom-nav{
+    padding-left: 20px;
+}
+.custom-nav-item:hover{
+    background-color: rgb(111, 51, 111);
+    border: 2px solid black;
+    border-radius: 9px;
+}
+
+.vid-parent{
+    position: relative;
+}
+
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.vid-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4b3370;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.vid-content{
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 35%;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.btn{
+    padding: 7px;
+    margin: 15px;
+}
+
+.bottom-banner{
+    color:rgb(111, 51, 111);
+    padding: 10px;
+
+}
+
+@media screen and (min-width:0px) and (max-width:700px){
+    .my-content, .txt-banner{
+        display:none;
+    }
+    .vid-content{
+        top: 12%;
+        left: 60%;
+    }
+
+    .custom-nav .custom-nav-item a{
+        padding: 10px 20px;
+        background-color: #225470;
+    }
+
+    .custom-nav-item:hover{
+        background-color: none;
+        border: none;
+        border-radius: none;
+    }
+}
